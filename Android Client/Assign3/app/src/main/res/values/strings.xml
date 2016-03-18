@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Assign3</string>
+    <string name="action_settings">Settings</string>
+    <string name="everyone">everyone</string>
+    <string name="failedServerInit">Failed to initialize server</string>
+    <string name="serverInit">Initialized server</string>
+    <string name="disconnected">Disconnected!</string>
+    <string name="connected">Connected!</string>
+    <string name="send_button">Send</string>
+    <string name="login_button">Login</string>
+    <string name="logout_button">Logout</string>
+    <string name="clear_button">Clear</string>
+
+
+</resources>

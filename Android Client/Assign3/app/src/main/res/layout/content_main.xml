@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.carleton.COMP2601.assignment2.ChatActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_button"
+        android:id="@+id/sendBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_marginEnd="80dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView_display"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/loginBtn"
+        android:layout_above="@+id/spinnerUsers" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/editText"
+        android:layout_alignEnd="@+id/textView_display"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/sendBtn"
+        android:background="#d3e6f6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_button"
+        android:id="@+id/clearBtn"
+        android:layout_alignTop="@+id/sendBtn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="70dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/spinnerUsers"
+        android:layout_above="@+id/editText"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/login_button"
+        android:id="@+id/loginBtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout_button"
+        android:id="@+id/logoutBtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/textView_display" />
+</RelativeLayout>
